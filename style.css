@@ -1,0 +1,327 @@
+/*Global CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    font-size: 16px;
+}
+
+h1,h2,h3,h4 {
+    color: #13191F;
+}
+
+p, a{
+    color: #13191F;
+    font-weight: 200;
+}
+
+
+/*Styles*/
+
+h1{
+    font-size: 40px;
+    line-height: 62px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 200;
+}
+
+h3{
+    color: #a8a8a8;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h5{
+    font-size: 16px;
+    color: #a8a8a8;
+    font-weight: 50;
+}
+
+/*Navigation*/
+
+nav{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    background: rgba(245, 245, 245, 0.90);
+    backdrop-filter: blur(2.5px);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div a{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav a img{
+    max-width: 48px;
+}
+
+nav a div{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #13191F;
+}
+
+nav li a{
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: color 3.9s ease;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+ul li a,
+ul li a:after { 
+   position: relative;
+}
+
+ul li a:after {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: 0%;
+   content: '.';
+   color: transparent;
+   background: #aaa;
+   height: 1px;
+ }
+ ul li a:hover:after {
+   width: 100%;
+}
+ 
+
+/*Main*/
+
+main{
+    margin-top: 167px;
+}
+
+.text-wrap{
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+
+.btn-secondary {
+    /* Base styles (adjust as needed) */ /* Adjust padding */
+    cursor: pointer;
+    border: none;
+    background-color: transparent; /* For hover effect */
+    color: #13191F; /* Same color as links (optional) */
+    transition: color 3.9s ease; /* Same transition as links (optional) */
+  
+    /* Text positioning (optional) */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Center text vertically */
+  
+    /* Create an element for the underline effect */
+    &::after {
+      content: '';
+      position: relative;
+
+      bottom: 0; /* Position underline at the bottom */
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0; /* Initially hidden */
+      height: 1px; /* Underline thickness */
+      background-color: #aaa; /* Same color as link underline (optional) */
+      transition: width 0.5s ease; /* Same transition as links (optional) */
+    }
+  }
+  
+  .btn-secondary:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+  
+
+
+
+.btn-primary {
+    /* Base styling */
+    padding: 15px 15px; /* Adjust padding as needed */
+    background-color: transparent; /* Start with no background color */
+    padding: 12px 32px;
+    border: 1px solid #13191F;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+  
+    /* Create a pseudo-element for the fill effect */
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);  /* Center the element */
+      border-radius: 4px;
+      width: 0; /* Initially hidden */
+      height: 102%; /* Start filling from the center */
+      background-color: #FFBC66; /* Choose your fill color */
+      transition: width 0.4s ease, height 0.1s ease; /* Animate both width & height */
+    }
+  
+    /* Ensure text is above the pseudo-element */
+    a {
+      position: relative;
+      z-index: 0; /* Higher than the fill for visibility */
+    }
+  
+    /* Hover effect */
+    &:hover::before {
+      width: 100%; /* Expand width beyond 100% for diagonal fill */
+       /* Expand height beyond 100% for diagonal fill */
+    }
+}
+  
+
+
+
+
+.typewrite > .wrap {
+    border-right: 0.08em solid #000000;
+  }
+  
+.typewrite > .wrap::after {
+    /* Adjust position to the right */
+    position: absolute;
+    right: 0;
+  }
+
+h1 .typewrite{
+    font-weight: 700;
+}
+
+.text-wrap div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-wrap h1{
+    margin-right: 12px;
+}
+
+
+.scroll {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000000 20%,  
+    #000000 80%, transparent)
+    }
+
+.scroll div{
+    white-space: nowrap;
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
+}
+
+.scroll div:nth-child(2)
+{
+    animation: animate2 var(--t) linear infinite;
+    animation-delay: calc(var(--t) / -2);
+}
+
+@keyframes animate 
+{
+    0%
+    {
+    transform: translateX(100%);
+    }
+    100%
+    {
+    transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translatex(-200%);
+    }
+}
+
+.scroll div span {
+    display: flex;
+    margin: 10px;
+    background:
+    #333;
+    color:
+    #fff;
+    padding: 50px 10px;
+    border-radius: 5px;
+    transition: 0.5;
+}
+
+.imgbx img {
+    max-width: 250px;
+}
+
+.banner{
+    margin: 80 0;
+}
