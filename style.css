@@ -1,5 +1,15 @@
 /*Global CSS*/
 
+:root::-webkit-scrollbar{
+    display: none;
+}
+  
+:root {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +20,7 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
 
 .container{
     width: 90%;
@@ -144,10 +155,6 @@ main{
     margin-top: 167px;
 }
 
-.text-wrap{
-
-}
-
 .buttons{
     display: flex;
     align-items: center;
@@ -222,7 +229,8 @@ main{
     /* Ensure text is above the pseudo-element */
     a {
       position: relative;
-      z-index: 0; /* Higher than the fill for visibility */
+      z-index: 3; /* Higher than the fill for visibility */
+      padding: 20px 0;
     }
   
     /* Hover effect */
@@ -323,5 +331,86 @@ h1 .typewrite{
 }
 
 .banner{
-    margin: 80 0;
+    margin-top: 160px;
+}
+
+.preview-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    margin: 48 0;
+    width: 100%;
+    gap: 32px;
+}
+
+.preview-box a {
+    position: relative; /* Needed for proper overlay positioning */
+    background-color: #F5F5F5; /* Base background color */
+    display: flex;
+    justify-content: center;
+    min-width: 380px;
+    height: 380px;
+    flex: 1;
+    transition: background-color 0.5s ease; /* Transition for background color */
+}
+  
+.preview-box a:hover {
+    background-color: transparent; /* Remove hover color for styling with nth-child */
+}
+  
+  /* Define hover colors using nth-child selector (optional) */
+.preview-box a:nth-child(1):hover {
+    background-color: #178783; /* Hover color for 1st card (optional) */
+}
+  
+.preview-box a:nth-child(2):hover {
+    background-color: 6CB4F5; /* Hover color for 2nd card (optional) */
+}
+  
+.preview-box a:nth-child(3):hover {
+    background-color: #A2559C; /* Hover color for 3rd card (optional) */
+}
+  
+.preview-box a:nth-child(4):hover {
+    background-color: #B28C60; /* Hover color for 4th card (optional) */
+}
+  
+/* Styles for the overlay element */
+.preview-box a .overlay {
+    position: absolute; /* Position overlay on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 25, 31, 0.5); /* Black color with 70% opacity */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: #ffffff; /* White text color */
+}
+
+.overlay h4,
+.overlay h5{
+    color: white;
+}
+
+.overlay .text-wrap{
+    margin: 16px;
+    max-width: 75%;
+}
+
+
+  
+.preview-box a:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+  
+.preview-box a .overlay h2,
+.preview-box a .overlay p {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center text within overlay */
 }
