@@ -13,7 +13,6 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -23,7 +22,7 @@ body{
 
 
 .container{
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -41,6 +40,7 @@ h1,h2,h3,h4 {
 p, a{
     color: #13191F;
     font-weight: 200;
+    max-width: 700px;
 }
 
 
@@ -50,6 +50,7 @@ h1{
     font-size: 40px;
     line-height: 62px;
     font-weight: 700;
+    max-width: 900px;
 }
 
 h2{
@@ -84,7 +85,7 @@ nav{
     position: fixed;
     z-index: 10;
     background: rgba(245, 245, 245, 0.90);
-    backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(7.5px);
 }
 
 nav div {
@@ -113,6 +114,7 @@ nav ul{
     align-items: center;
     gap: 40px;
     color: #13191F;
+    list-style: none;
 }
 
 nav li a{
@@ -153,7 +155,6 @@ ul li a:after {
 
 main{
     margin-top: 167px;
-    margin-bottom: 80px;
 }
 
 .buttons{
@@ -414,4 +415,301 @@ h1 .typewrite{
 .preview-box a .overlay p {
     margin: 0; /* Remove default margins */
     text-align: center; /* Center text within overlay */
+}
+
+.project-header{
+    position: sticky;
+    top: 99px;
+    display: flex;
+    width: 100%;
+    height: 430px;
+    background-color: #178783;
+    z-index: -1;
+}
+
+.projectdetails{
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.project-header img{
+    scale: 1.8;
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    background-color: white;
+}
+
+.overview{
+    padding: 64px 0 80px 0;
+}
+
+.overview p{
+    margin: 24px 0 24px 0;
+}
+
+.summary{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    gap: 24px;
+}
+
+.summary div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    gap: 8px;
+}
+
+.summary img{
+    display: flex;
+    width: 180px;
+    margin: 8px 0 8px 0;
+}
+
+.summary span{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 8px;
+}
+
+span h4{
+    display: flex;
+    max-width: fit-content;
+    border: 1px solid #13191F;
+    border-radius: 28px;
+    padding: 4px 24px;
+}
+
+
+.text-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 160px 0 160px 0;
+}
+
+.project-info .text-wrapper div{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+ol {
+    list-style-type: circle;
+    font-weight: 200;
+}
+
+
+ol li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+h3{
+    display: flex;
+    max-width: 340px;
+    margin-right: 24px;
+    min-width: 180px;
+    color: #13191F;
+}
+
+.project-info p{
+    display: flex;
+    max-width: 700px;
+}
+
+
+.foto-wrapper{
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: #F5F5F5;   
+}
+
+.foto-wrapper img{
+    height: 400px;
+    scale: 1.2;
+    min-width: 500px;
+    flex: 1 0 0;
+    object-fit: contain;
+}
+
+
+
+
+/* Akkordeon */
+
+.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 24px 24px 24px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #C4C5C7;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.8s;
+}
+  
+.accordion:hover {
+    background-color: #F5F5F5;
+  }
+  
+.accordion:after {
+    content: url(/Vector\ 9.svg);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: url(/Vector\ 8.svg);
+}
+  
+.panel {
+    display: flex;
+    flex-direction: column;
+    padding: 0px px;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.accordion-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.panel p {
+    padding-top: 24px;
+}
+
+.accordion span{
+    font-weight: 50;
+    color: #C4C5C7;
+}
+
+.panel img{
+    display: flex;
+    width: 100%;
+    max-height: 280px; 
+    object-fit: contain;
+    padding: 24px 0;
+}
+
+.accordion-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0 160px 0;
+}
+
+.reflection{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.reflection div{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 1200px;
+    padding: 160px 0 160px 0;
+}
+
+.next-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 80px 0 80px 0;
+}
+
+
+/* About */
+
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+    padding: 80px 0 80px 0;
+    background-color: #F5F5F5;
+}
+
+.skill-wrapper h3{
+    text-align: center;
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 24px;
+    max-width: 250px;
+    background-color: #fff;
+}
+
+.experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+}
+
+.experience{
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    max-width: 700px;
+}
+
+.line-dot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: #C4C5C7;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.vl{
+    border-left: 2px solid #C4C5C7;
+    flex: 1 0 0;
+}
+
+.experience p{
+    color: #C4C5C7;
+    display: flex;
+}
+
+.work ol{
+   margin: 24px 0 24px 24px;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    width: 100%;
+    max-width: 700px;
 }
