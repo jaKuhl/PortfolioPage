@@ -720,3 +720,35 @@ h3{
     width: 100%;
     max-width: 700px;
 }
+
+
+
+.mySwiper {
+    max-width: 1120px;
+    width: 100%;
+    padding: 50px 10px;
+}
+  
+.swiper-slide{
+    background-color: white;
+    height: 100px;
+}
+  
+.swiper-container{
+    margin: 0 32px;
+    overflow: hidden;
+}
+  
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    color: rgb(160, 160, 160);
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: rgb(181, 181, 181);
+}

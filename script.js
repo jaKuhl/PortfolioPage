@@ -8,7 +8,7 @@ var TxtType = function(el, toRotate, period) {
     this.isDeleting = false;
   };
   
-  TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
   
@@ -44,9 +44,9 @@ var TxtType = function(el, toRotate, period) {
     setTimeout(function() {
       that.tick();
     }, delta);
-  };
+};
   
-  window.onload = function() {
+window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
       var toRotate = elements[i].getAttribute('data-type');
@@ -60,5 +60,25 @@ var TxtType = function(el, toRotate, period) {
         new TxtType(elements[i], JSON.parse(toRotate), period);
       }
     }
-  };
+};
+  
+
+
+
+
+let swiper = new Swiper("swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  navigation: {
+  nextEl:'.swiper-button-next',
+  prevEl:'.swiper-button-prev'
+  },
+  
+pagination: {
+  el:'.swiper-pagination',
+  clickable: true,
+  dynamicBullets: true
+}
+});
   
