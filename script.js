@@ -66,7 +66,7 @@ window.onload = function() {
 
 
 
-let swiper = new Swiper("swiper-container", {
+let swiper = new Swiper(".swiper-container", {
   slidesPerView: 3,
   spaceBetween: 30,
   grabCursor: true,
