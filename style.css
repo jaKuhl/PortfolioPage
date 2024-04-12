@@ -727,6 +727,7 @@ h3{
     max-width: 1120px;
     width: 100%;
     padding: 50px 10px;
+    display: flex;
 }
   
 .swiper-slide{
@@ -758,10 +759,9 @@ h3{
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
-    min-height: 220px;
 }
 
 .content img{
-    height: 72px;
+    height: 64px;
     margin-bottom: 24px;
 }
