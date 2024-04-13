@@ -334,6 +334,7 @@ h1 .typewrite{
 
 .banner{
     margin-top: 160px;
+    margin-bottom: 80px;
 }
 
 .preview-box{
@@ -348,13 +349,32 @@ h1 .typewrite{
 
 .preview-box a {
     position: relative; /* Needed for proper overlay positioning */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #F5F5F5; /* Base background color */
     display: flex;
     justify-content: center;
     min-width: 380px;
-    height: 380px;
+    height: 400px;
     flex: 1;
     transition: background-color 0.5s ease; /* Transition for background color */
+}
+
+.link-guitartuna{
+    background-image: url(/IMG/Projects/preview2.png);
+}
+
+.link-cliniserve{
+    background-image: url(/IMG/Projects/preview3.png);
+}
+
+.link-jamaseo{
+    background-image: url(/IMG/Projects/preview4.png);
+}
+
+.link-kinexon{
+    background-image: url(/IMG/Projects/preview1.png);
 }
   
 .preview-box a:hover {
@@ -458,6 +478,7 @@ h1 .typewrite{
 
 .summary{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 32px;
     gap: 24px;
@@ -466,8 +487,8 @@ h1 .typewrite{
 .summary div {
     display: flex;
     flex-direction: column;
-    flex: 1 0 0;
     gap: 8px;
+    max-width: 350px;
 }
 
 .summary img{
@@ -536,10 +557,8 @@ h3{
 }
 
 .foto-wrapper img{
-    height: 400px;
-    scale: 1.2;
-    min-width: 500px;
-    flex: 1 0 0;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -765,6 +784,15 @@ h3{
         flex-direction: column;
         justify-content: space-between;
         padding: 160px 0 160px 0;
+    }
+
+    .preview-box a{
+        min-width: 100%;
+        position: relative;
+    }
+
+    .preview-box .overlay{
+        display: none;
     }
 
     .experience{
