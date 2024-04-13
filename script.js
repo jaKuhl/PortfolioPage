@@ -75,6 +75,20 @@ let swiper = new Swiper(".swiper-container", {
   nextEl:'.swiper-button-next',
   prevEl:'.swiper-button-prev'
   },
+  breakpoints: {
+    240: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    890: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
   
 pagination: {
   el:'.swiper-pagination',
@@ -82,4 +96,3 @@ pagination: {
   dynamicBullets: true
 }
 });
-  
