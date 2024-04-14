@@ -779,11 +779,43 @@ h3{
         width: 90%;
     }
 
+    .btn-primary {
+        /* Base styling */
+        padding: 15px 15px; /* Adjust padding as needed */
+        background-color: transparent; /* Start with no background color */
+        padding: 12px 32px;
+        border: 1px solid #13191F;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+        position: relative;
+      
+        /* Create a pseudo-element for the fill effect */
+        
+        &::before {
+          display: none;
+        }
+      
+        /* Ensure text is above the pseudo-element */
+        a {
+          position: relative;
+          z-index: 3; /* Higher than the fill for visibility */
+          padding: 20px 0;
+        }
+      
+        /* Hover effect */
+        &:hover::before {
+          display: none;
+        }
+    }
+
     .text-wrapper{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 160px 0 160px 0;
+        gap: 32px;
+        padding: 80px 0 80px 0;
     }
 
     .preview-box a{
@@ -793,6 +825,22 @@ h3{
 
     .preview-box .overlay{
         display: none;
+    }
+
+    .accordion-container{
+        flex-direction: column;
+        gap: 32px;
+        padding: 0px 0 80px 0;
+    }
+    
+    .reflection div{
+        flex-direction: column;
+        gap: 32px;
+        padding: 80px 0 80px 0;
+    }
+
+    .skill-wrapper {
+        gap: 0px;
     }
 
     .experience{
