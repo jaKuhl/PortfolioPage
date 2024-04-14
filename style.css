@@ -75,10 +75,10 @@ h5{
 /*Navigation*/
 
 nav{
-    height: 6rem;
+    height: fit-content;
     width: 100%;
-    display: flex;
     align-items: center;
+    padding: 24px 0;
     top: 0;
     left: 0;
     position: fixed;
@@ -96,7 +96,7 @@ nav div {
 nav div a{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 nav a img{
@@ -148,7 +148,33 @@ ul li a:after {
  ul li a:hover:after {
    width: 100%;
 }
- 
+
+
+.menu-icon{
+    display: none;
+}
+
+.dropdown-menu{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+    display: block;
+    height: fit-content;
+}
+
+.dropdown-menu li{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 32px;
+}
+
 
 /*Main*/
 
@@ -779,6 +805,10 @@ h3{
         width: 90%;
     }
 
+    .dropdown-menu{
+        display: block;
+    }
+
     .btn-primary {
         /* Base styling */
         padding: 15px 15px; /* Adjust padding as needed */
@@ -856,12 +886,20 @@ h3{
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     h1 {
         font-size: 32px;
         line-height: 40px;
     }
     h2{
         font-size: 24px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
     }
 }
