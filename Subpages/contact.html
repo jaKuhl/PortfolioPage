@@ -26,10 +26,20 @@
       <ul>
         <li><a href="/Subpages/projects.html">Projects</a></li>
         <li><a href="/Subpages/about.html">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="/Subpages/contact.html">Contact</a></li>
       </ul>
+      <div class="menu-icon">
+        <i><img src="/IMG/SVG´s/menu.svg" alt=""></i>
+      </div>
       
     </div>
+
+    <div class="dropdown-menu">
+        <li><a href="/Subpages/projects.html">Projects</a></li>
+        <li><a href="/Subpages/about.html">About</a></li>
+        <li><a href="/Subpages/contact.html">Contact</a></li>
+    </div>
+
   </nav>
 
   <main>
@@ -41,4 +51,15 @@
 
   </main>
 
+  <script>
+    const toggleBtn = document.querySelector('.menu-icon');
+    const dropDownMenu = document.querySelector('.dropdown-menu');
+
+    toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open');
+    };
+
+  </script>
+
 </body>
+</html>
