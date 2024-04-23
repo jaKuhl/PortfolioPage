@@ -269,9 +269,6 @@ main{
        /* Expand height beyond 100% for diagonal fill */
     }
 }
-  
-
-
 
 
 .typewrite > .wrap {
@@ -851,13 +848,14 @@ h3{
         padding: 80px 0 80px 0;
     }
 
-    .preview-box a{
-        min-width: 100%;
-        position: relative;
-    }
-
-    .preview-box .overlay{
+    .preview-box a .overlay {
         display: none;
+    }
+    .preview-box a:nth-child(3):hover, 
+    .preview-box a:nth-child(2):hover, 
+    .preview-box a:nth-child(1):hover, 
+    .preview-box a:nth-child(4):hover{
+        background-color: #F5F5F5;
     }
 
     ol {
