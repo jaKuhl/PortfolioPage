@@ -85,6 +85,7 @@ nav{
     z-index: 10;
     background: rgba(245, 245, 245, 0.90);
     backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
 }
 
 nav div {
@@ -354,7 +355,7 @@ h1 .typewrite{
     transition: 0.5;
 }
 
-.imgbx img {
+.banner img {
     max-width: 250px;
 }
 
