@@ -922,4 +922,8 @@ h3{
     nav ul{
         display: none;
     }
+
+    .next-project h1{
+        font-size: 24px;
+    }
 }
