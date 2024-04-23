@@ -39,7 +39,8 @@ h1,h2,h3,h4 {
 p, a{
     color: #13191F;
     font-weight: 200;
-    max-width: 700px;
+    max-width: 750px;
+    text-align: justify;
 }
 
 
@@ -571,11 +572,6 @@ h3{
     color: #13191F;
 }
 
-.project-info p{
-    display: flex;
-    max-width: 700px;
-}
-
 
 .foto-wrapper{
     display: flex;
@@ -850,6 +846,7 @@ h3{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
         gap: 32px;
         padding: 80px 0 80px 0;
     }
@@ -863,6 +860,10 @@ h3{
         display: none;
     }
 
+    ol {
+        padding-left: 24px;
+    }
+
     .accordion-container{
         flex-direction: column;
         gap: 32px;
@@ -872,7 +873,11 @@ h3{
     .reflection div{
         flex-direction: column;
         gap: 32px;
-        padding: 80px 0 80px 0;
+        width: 90%;
+    }
+
+    .next-project h1{
+        font-size: 32px;
     }
 
     .skill-wrapper {
