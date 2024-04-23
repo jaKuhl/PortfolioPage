@@ -874,6 +874,7 @@ h3{
         flex-direction: column;
         gap: 32px;
         width: 90%;
+        padding: 80px 0 80px 0;
     }
 
     .next-project h1{
