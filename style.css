@@ -579,12 +579,16 @@ h3{
 
 .foto-wrapper{
     display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: auto;
     flex-wrap: wrap; 
-    background-color: #F5F5F5;   
+    padding: 40px;
+    background-color: #F5F5F5;  
 }
 
 .foto-wrapper img{
-    height: 100%;
+    max-height: 300px;
     width: 100%;
     object-fit: contain;
 }
@@ -756,10 +760,10 @@ h3{
 
 
 .mySwiper {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 75%;
-    padding: 50px 10px;
-    display: flex;
+    height: 300px;
+    padding: 48px 10px;
 }
   
 .swiper-slide{
@@ -769,6 +773,7 @@ h3{
 .swiper-container{
     margin: 0 32px;
     overflow: hidden;
+    height: 100%;
 }
   
 .swiper-button-next::after,
@@ -790,6 +795,7 @@ h3{
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
+    height: 100%;
 }
 
 .content img{
@@ -873,8 +879,13 @@ h3{
         gap: 0px;
     }
 
+    .experience-wrapper{
+        align-items: flex-start;
+    }
+
     .experience{
         display: flex;
+        height: 160px;
         width: 100%;
         gap: 8px;
         max-width: 700px;

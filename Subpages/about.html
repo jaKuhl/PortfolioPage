@@ -154,7 +154,7 @@
 
       <div class="text-wrapper">
             
-      <h3>Working Experience</h3>
+      <h3 style="width: 300px;">Working Experience</h3>
         
       <div class="experience-wrapper">
 
@@ -235,7 +235,7 @@
         </div>
       </div>
 
-      <div class="text-wrapper" style="margin-top: -160px;">
+      <div class="text-wrapper" style="margin-top: -80px;">
             
       <h3>Education</h3>
             
@@ -284,7 +284,7 @@
       
       </div>
 
-      <div class="text-wrapper" style="margin-top: -160px;">
+      <div class="text-wrapper" style="margin-top: -80px;">
             
         <h3>Languages</h3>
         
@@ -295,7 +295,7 @@
         </div>
       </div>
 
-      <div class="text-wrapper" style="margin-top: -160px;">
+      <div class="text-wrapper" style="margin-top: -80px;">
             
         <h3>Resume</h3>
         
@@ -313,22 +313,22 @@
     
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/script.js"></script>
-  <script>
-    const toggleBtn = document.querySelector('.menu-icon');
-    const dropDownMenu = document.querySelector('.dropdown-menu');
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/script.js"></script>
+<script>
+  const toggleBtn = document.querySelector('.menu-icon');
+  const dropDownMenu = document.querySelector('.dropdown-menu');
 
-    toggleBtn.onclick = function () {
-    dropDownMenu.classList.toggle('open');
-    };
-
-
+  toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle('open');
+  };
 
 
-let swiper = new Swiper(".swiper-container", {
+
+
+  let swiper = new Swiper(".swiper-container", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 0,
   grabCursor: true,
   loop: true,
   navigation: {
@@ -338,25 +338,25 @@ let swiper = new Swiper(".swiper-container", {
   breakpoints: {
     240: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 25,
     },
-    640: {
+    750: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 24,
     },
-    890: {
+    1000: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 24,
     },
   },
   
-pagination: {
+  pagination: {
   el:'.swiper-pagination',
   clickable: true,
   dynamicBullets: true
-}
-});
-  </script>
+  }
+  });
+</script>
 
 </body>
 
