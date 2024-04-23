@@ -380,7 +380,7 @@ h1 .typewrite{
     background-color: #F5F5F5; /* Base background color */
     display: flex;
     justify-content: center;
-    min-width: 300px;
+    min-width: 350px;
     height: 400px;
     flex: 1;
     transition: background-color 0.5s ease; /* Transition for background color */
@@ -846,6 +846,10 @@ h3{
         width: 100%;
         gap: 32px;
         padding: 80px 0 80px 0;
+    }
+
+    .preview-box a {
+        min-width: 100%;
     }
 
     .preview-box a .overlay {
