@@ -9,6 +9,16 @@
     -ms-overflow-style: none;
 }
 
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +27,10 @@
 
 body{
     font-family: "Poppins", sans-serif;
+}
+
+main{
+    animation: fade-up 2.0s;
 }
 
 
