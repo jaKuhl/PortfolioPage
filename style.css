@@ -43,7 +43,6 @@ p, a{
     text-align: justify;
 }
 
-
 /*Styles*/
 
 h1{
@@ -591,6 +590,10 @@ h3{
 
 /* Akkordeon */
 
+.accordion-wrapper button {
+    color: #13191F;
+}
+
 .accordion {
     background-color: transparent;
     cursor: pointer;
@@ -601,7 +604,7 @@ h3{
     text-align: left;
     outline: none;
     font-size: 15px;
-    transition: 0.8s;
+    transition: 1.8s;
 }
   
 .accordion:hover {
