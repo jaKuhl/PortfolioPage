@@ -697,7 +697,17 @@ h3{
 }
 
 .skill-wrapper h3{
-    text-align: center;
+    text-align: left;
+}
+
+.experience p{
+    max-width: 78px; 
+    min-width: 74px;
+    text-align: left;
+}
+
+.work p{
+    max-width: none;
 }
 
 .experience-wrapper{
