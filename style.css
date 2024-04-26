@@ -9,7 +9,7 @@
     -ms-overflow-style: none;
 }
 
-@keyframes fade-up {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -30,7 +30,7 @@ body{
 }
 
 main{
-    animation: fade-up 2.0s;
+    animation: fade-in 2.0s;
 }
 
 
