@@ -567,7 +567,7 @@ h1 .typewrite{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 350px;
+    max-width: 430px;
 }
 
 .summary img{
@@ -940,8 +940,10 @@ h3{
         background-color: #F5F5F5;
     }
 
-    .project-header-cliniserve
-    .project-header-jamaseo{
+    .project-header-cliniserve,
+    .project-header-jamaseo,
+    .project-header-jamaseo,
+    .project-header-kinexon{
         background-size: contain;
     }
 
