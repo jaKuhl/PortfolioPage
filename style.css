@@ -78,12 +78,14 @@ h3{
 h4{
     font-size: 16px;
     font-weight: 300;
+    text-align: left;
 }
 
 h5{
     font-size: 16px;
     color: #a8a8a8;
     font-weight: 150;
+    text-align: left;
 }
 
 /*Navigation*/
@@ -475,7 +477,7 @@ h1 .typewrite{
     text-align: center; /* Center text within overlay */
 }
 
-.project-header{
+.project-header-guitartuna{
     position: sticky;
     top: 96px;
     width: 100%;
@@ -495,16 +497,42 @@ h1 .typewrite{
     height: 50%;
     background-image: url(/IMG/Projects/preview3.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     background-position: center;
     background-color: #6CB4F5;
+    z-index: -1;
+}
+
+.project-header-jamaseo{
+    position: sticky;
+    top: 96px;
+    width: 100%;
+    height: 50%;
+    background-image: url(/IMG/Projects/preview4.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: #A2559C;
+    z-index: -1;
+}
+
+.project-header-kinexon{
+    position: sticky;
+    top: 96px;
+    width: 100%;
+    height: 50%;
+    background-image: url(/IMG/Projects/preview1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: #B28C60;
     z-index: -1;
 }
 
 .breadcrumb{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .projectdetails{
@@ -570,10 +598,14 @@ span h4{
   padding: 160px 0 160px 0;
 }
 
+.extra{
+    margin-top: -160px;
+}
+
 .project-info .text-wrapper div{
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 750px;
 }
 
 ol {
@@ -665,6 +697,7 @@ h3{
 .accordion-wrapper{
     display: flex;
     flex-direction: column;
+    max-width: 750px;
 }
 
 .panel p {
@@ -889,6 +922,10 @@ h3{
         padding: 80px 0 80px 0;
     }
 
+    .extra{
+        margin-top: -80px;
+    }
+
     .preview-box a {
         min-width: 100%;
     }
@@ -901,6 +938,11 @@ h3{
     .preview-box a:nth-child(1):hover, 
     .preview-box a:nth-child(4):hover{
         background-color: #F5F5F5;
+    }
+
+    .project-header-cliniserve
+    .project-header-jamaseo{
+        background-size: contain;
     }
 
     .accordion-container{
