@@ -786,6 +786,10 @@ h3{
 .swiper-slide{
     background-color: white;
 }
+
+.swiper-slide p{
+    text-align: left;
+}
   
 .swiper-container{
     margin: 0 32px;
