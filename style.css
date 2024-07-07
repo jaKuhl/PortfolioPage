@@ -497,7 +497,7 @@ h1 .typewrite{
     height: 50%;
     background-image: url(/IMG/Projects/preview3.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center;
     background-color: #6CB4F5;
     z-index: -1;
@@ -510,7 +510,7 @@ h1 .typewrite{
     height: 50%;
     background-image: url(/IMG/Projects/preview4.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center;
     background-color: #A2559C;
     z-index: -1;
@@ -523,7 +523,7 @@ h1 .typewrite{
     height: 50%;
     background-image: url(/IMG/Projects/preview1.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center;
     background-color: #B28C60;
     z-index: -1;
